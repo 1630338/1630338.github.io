@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Agregar Mantenimiento</title>
+
+ <!-- Bootstrap -->
+ <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Font Awesome -->
+ <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <!-- NProgress -->
+ <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- Switchery -->
+<link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+ <!-- Custom Theme Style -->
+ <link href="../build/css/custom.min.css" rel="stylesheet">
+
+ <link href="../Paginas/css/estilo.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.css">
+<!-- Include plugin -->
+
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>PhoneRestore</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Carlos Carillo</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="Home.html"><i class="fa fa-home"></i> Principal</a></li>
+                  <li><a href="Caja.html"><i class="fa fa-briefcase"></i> Caja</a></li>
+                  <li><a><i class="fa fa-shopping-cart"></i> Ventas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="RealizarVenta.html">Realizar venta</a></li>
+                      <li><a href="Ventas.html">Ventas</a></li>
+                      <li><a href="Clientes.html">Clientes</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-suitcase"></i> Compras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="VistaIngreso.html">Ingresos</a></li>
+                      <li><a href="Proveedores.html">Proveedores</a></li>                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cubes"></i> Almacén <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Categorias.html">Categorías</a></li>
+                      <li><a href="Sub-Categoria.html">Sub-categorias</a></li>
+                      <li><a href="Producto.html">Productos</a></li>
+                      <li><a href="UnidadesM.html">Unidades de medida</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-wrench"></i> Taller <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Reparacion.html">Reparación</a></li>
+                      <li><a href="VerMantenimiento.html">Mantenimiento</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a>Reporte Ingresos</a></li>
+                      <li><a>Reporte Ventas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Configuración</h3>
+                <ul class="nav side-menu">                  
+                  <li><a><i class="fa fa-gears"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">                      
+                      <li><a href="projects.html">Tiendas</a></li>
+                      <li><a href="contacts.html">Empleados</a></li>
+                      <li><a href="Perfil-Tienda.html">Perfil</a></li>
+                      <li><a href="TipoDocumento.html">Tipo documento</a></li>
+                    </ul>
+                  </li>                  
+                  <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de...</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>-->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="">Carlos Carillo
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="javascript:;"> Perfil</a>
+                      <a class="dropdown-item"  href="javascript:;">                        
+                        <span>Configuración</span>
+                      </a>
+                  <a class="dropdown-item"  href="javascript:;">Help</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Salir</a>
+                  </div>
+                </li>
+
+                <li role="presentation" class="nav-item dropdown open">
+                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="text-center">
+                        <a class="dropdown-item">
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <div class="">              
+              <div class="clearfix"></div>
+  
+              <div class="row">
+  
+                <div class="col-md-12 col-sm-12 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Mantenimiento</h2>                      
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+  
+  
+                      <!-- Smart Wizard -->                      
+                      <div id="wizard" class="form_wizard wizard_horizontal">
+                        <ul class="wizard_steps">
+                          <li>
+                            <a href="#step-1">
+                              <span class="step_no">1</span>
+                              <span class="step_descr">
+                                                Paso 1<br />
+                                                <small>Cliente</small>
+                                            </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#step-2">
+                              <span class="step_no">2</span>
+                              <span class="step_descr">
+                                                Paso 2<br />
+                                                <small>Equipo</small>
+                                            </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#step-3">
+                              <span class="step_no">3</span>
+                              <span class="step_descr"> 
+                                              Paso 3<br>
+                                            <small>Depósito</small></span>
+                            </a>
+                          </li>
+                        </ul>
+
+                        <!--Inicia paso 1-->
+                        <div id="step-1">
+                          <form class="form-horizontal form-label-left">
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="NombreC">Nombre(s) del cliente <span class="required">*</span>
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="NombreC" required class="form-control">
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="ApellidoPC">Apellido Paterno <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" id="ApellidoPC" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="ApellidoMC">Apellido Materno</label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" id="ApellidoMC" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="DireccionC">Dirección</label>
+                                <div class="col-md-6 col-sm-6 ">                                  
+                                    <input type="text" id="DireccionC" class="form-control">                                  
+                                </div>
+                                <div class="col-md-1 col-sm-1">
+                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MDireccionC"><span class="glyphicon glyphicon-plus mas"></span></button>
+                                </div>
+                                <!--Empieza modal para Direccion-->
+                              <div class="modal fade bs-example-modal-lg" id="MDireccionC" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">          
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Dirección</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Calle">Calle</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Calle" name="Calle">
+                                          </div>                                          
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NExterior">N°Exterior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="NExterior" name="NExterior">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NInterior">N°Interior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="NInterior" name="NInterior">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Colonia">Colonia</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Colonia" name="Colonia">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Poblacion">Población</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Poblacion" name="Poblacion">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Municipio">Municipio</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Municipio" name="Municipio">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Estado">Estado</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Estado" name="Estado">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-form-label col-md-3 col-sm-3 label-align" for="Pais">Pais</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Pais" name="Pais">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="CP">Código Postal</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="CP" name="CP">
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para direccion-->
+                            </div>
+
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="CorreoEC">Correo electrónico
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="email" class="form-control col" name="CorreoEC" id="CorreoEC" >
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="TelefonoC">Teléfono
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="number" class="form-control col" name="TelefonoC">
+                                </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!--Termina paso 1-->
+
+                        <!--Inicia paso 2-->
+                        <div id="step-2">                          
+                          <form class="form-horizontal form-label-left">
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="NOrden">N° Orden</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control" name="NOrden" disabled>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="FechH">Fecha y Hora</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="datetime-local" class="form-control" name="FechH" disabled>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="Aparato">Aparato</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="text" class="form-control" name="Aparato">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="Tecnico">Técnico</label>
+                              <div class="col-md-6 col-sm-6">
+                                <select class="form-control">
+                                  <option selected disabled>Selecciona un técnico</option>
+                                  <option>HP</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="MarcaM">Marca *
+                              </label>
+                              <div class="col-md-6 col-sm-6">
+                                <select class="form-control">
+                                    <option selected disabled>Selecciona una marca</option>
+									                  <option>HP</option>
+                                </select>
+                              </div>                                                                                          
+                            </div> 
+
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="ModeloM">Modelo *</label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <select class="form-control">
+                                    <option selected disabled>Selecciona un modelo</option>
+                                    <option>2048</option>
+                                  </select>
+                                </div>                                
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="SerieC">N° de Serie *
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <input type="text" class="form-control" id="SerieC" name="SerieC">
+                                </div>                              
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="CondicionesC">Condiciones
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <textarea rows="3" class="form-control" ></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="CondicionesC">Descripción de falla
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <textarea rows="5" class="form-control" ></textarea>
+                                </div>
+                            </div>
+                            
+                          </form>
+                        </div>
+                        <!--Termina paso 2-->                        
+
+                        <!--Empieza paso 3-->
+                        <div id="step-3">                          
+                          <form class="form-horizontal form-label-left">
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="DCliente">Depósito cliente $</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control" name="DCliente">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="DRevision">Depósito revisión $</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control" name="DRevision">
+                              </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="PPagar">Diferencia a pagar $</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control" name="PPagar">
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                        <!--Termina paso 3-->
+                      </div>
+                      <!-- End SmartWizard Content -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">            
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+     <!-- jQuery -->
+     <script src="../vendors/jquery/dist/jquery.min.js"></script>
+     <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- FastClick -->
+     <script src="../vendors/fastclick/lib/fastclick.js"></script>
+     <!-- NProgress -->
+     <script src="../vendors/nprogress/nprogress.js"></script>
+     <!-- Switchery -->
+	  <script src="../vendors/switchery/dist/switchery.min.js"></script>
+     <!-- jQuery Smart Wizard -->
+     <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+     <!-- Custom Theme Scripts -->
+     <script src="../build/js/custom.min.js"></script>
+
+     <script src="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.js"></script>
+
+     <script>
+      // Initialize multiple select on your regular select
+      $("#my-select").multipleSelect({
+          filter: true
+      });
+  </script>
+  </body>
+</html>

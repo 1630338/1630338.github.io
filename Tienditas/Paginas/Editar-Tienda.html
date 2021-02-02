@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+
+    <link href="../Paginas/css/estilo.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>PhoneRestore</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Carlos Carillo</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <div class="menu_section">
+                  <h3>General</h3>
+                  <ul class="nav side-menu">
+                    <li><a href="Home.html"><i class="fa fa-home"></i> Principal</a></li>
+                    <li><a href="Caja.html"><i class="fa fa-briefcase"></i> Caja</a></li>
+                    <li><a><i class="fa fa-shopping-cart"></i> Ventas <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="RealizarVenta.html">Realizar venta</a></li>
+                        <li><a href="Ventas.html">Ventas</a></li>
+                        <li><a href="Clientes.html">Clientes</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-suitcase"></i> Compras <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="VistaIngreso.html">Ingresos</a></li>
+                        <li><a href="Proveedores.html">Proveedores</a></li>                      
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-cubes"></i> Almacén <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="Categorias.html">Categorías</a></li>
+                        <li><a href="Sub-Categoria.html">Sub-categorias</a></li>
+                        <li><a href="Producto.html">Productos</a></li>
+                        <li><a href="UnidadesM.html">Unidades de medida</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-wrench"></i> Taller <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="Reparacion.html">Reparación</a></li>
+                        <li><a href="VerMantenimiento.html">Mantenimiento</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a>Reporte Ingresos</a></li>
+                        <li><a>Reporte Ventas</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu_section">
+                  <h3>Configuración</h3>
+                  <ul class="nav side-menu">                    
+                    <li><a><i class="fa fa-gears"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">                      
+                        <li><a href="Tiendas.html">Tiendas</a></li>
+                        <li><a href="contacts.html">Empleados</a></li>
+                        <li><a href="Perfil-Tienda.html">Perfil</a></li>
+                        <li><a href="TipoDocumento.html">Tipo documento</a></li>
+                      </ul>
+                    </li>                  
+                    <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de...</a></li>
+                  </ul>
+                </div>
+  
+              </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>-->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/img.jpg" alt="">John Doe
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+  
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">            
+            
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Perfil <small>Tienda</small></h2>                    
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="col-md-3 col-sm-3  profile_left">
+                      <div class="profile_img">
+                        <div id="crop-avatar">
+                          <!-- Current avatar -->
+                          <img class="img-responsive avatar-view" src="images/picture.jpg" alt="Avatar" title="Change the avatar">
+                        </div>
+                      </div>
+                      <h3>PhoneRestore</h3>
+
+                      <ul class="list-unstyled user_data">
+                        <li><i class="fa fa-map-marker user-profile-icon"></i> Lagos de Moreno, GDL Jalisco
+                        </li>
+
+                        <li>
+                          <i class="fa fa-briefcase user-profile-icon"></i> Carlos  Carillo
+                        </li>
+
+                        <li class="m-top-xs">
+                          <i class="fa fa-external-link user-profile-icon"></i>
+                          <a href="http://develop.nanoclip.com.mx/localhost" target="_blank">www.develop.nanoclip.com</a>
+                        </li>
+                      </ul>
+
+                      <!-- start skills -->
+                      <h4>Información</h4>
+                      <ul class="list-unstyled user_data">                        
+                        <li>
+                          <p>Dias laborales</p>                          
+                        </li>                        
+                        <li>
+                          <p>Faltas injustificadas</p>                          
+                        </li>
+                      </ul>
+                      <!-- end of skills -->
+
+                    </div>
+                    <div class="col-md-9 col-sm-9 ">
+
+                      <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                        <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Datos generales</a>
+                          </li>
+                          <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Ubicación</a>
+                          </li>
+                          <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Datos Fiscales</a>
+                          </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                          <!--Empieza datos generales-->
+                          <div role="tabpanel" class="tab-pane active " id="tab_content1" aria-labelledby="home-tab">
+                            <form class="form-horizontal form-label-left">
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="TiendaTE">Tienda Tipo</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" value="Matriz" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3" for="LogoE">Logo empresa <span class="required">*</span>
+                                </label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="file" class="form-control" id="FotoE">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label class="col-form-label col-md-3 col-sm-3" for="NombreEmp">Nombre de le empresa <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-6 col-sm-6">
+                                    <input type="text" id="NombreEmp" class="form-control" required>
+                                  </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-3 col-sm-3" for="EmailE">Correo electrónico *</label>
+                                    <div class="col-md-6 col-sm-6 ">
+                                      <input type="email" id="EmailE" class="form-control" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="TelefonoEmp">Teléfono empresa (1)</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="number" id="TelefonoEmp" class="form-control">
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="TelefonoEmp2">Teléfono empresa (2)</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="number" id="TelefonoEmp2" class="form-control">
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-3 col-sm-3" for="PaginaE">Página Web</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="url" class="form-control" id="PaginaE">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-6 col-sm-6 label-align letraA"> Redes Sociales</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="FacebookE">Facebook </label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="url" class="form-control" id="FacebookE">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="TwitterE">Twitter </label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="url" class="form-control" id="TwitterE">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                      <button type="submit" class="btn btn-danger botonlugar">Guardar Cambios</button>
+                                    </div>
+                                </div>
+                              </form>
+                          </div>
+                          <!--Términa datos generales-->
+
+                          <!--Empieza ubicación-->
+                          <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                            <form class="form-horizontal form-label-left">                            
+                                <div class="form-group row">
+                                  <label class="col-from-label col-md-3 col-sm-3" for="TiendaA">Tienda asignada *
+                                  </label>
+                                  <div class="col-md-6 col-sm-6">
+                                    <select class="form-control">
+                                        <option selected disabled>Selecciona una opción</option>
+                                        <option>PhoneRestore</option>
+                                    </select>
+                                  </div>
+                                </div> 
+    
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-3 col-sm-3" for="Departamento">Departamento *</label>
+                                    <div class="col-md-6 col-sm-6 ">
+                                      <select class="form-control">
+                                        <option selected disabled>Selecciona una opción</option>
+                                        <option>Trabajador</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                  <label class="col-from-label col-md-3 col-md-3 col-sm-3" for="TelefonoCL">Teléfono celular laboral
+                                  </label>
+                                  <div class="col-md-6 col-sm-6">
+                                    <input type="number" class="form-control col" name="TelefonoCL">
+                                  </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                  <label class="col-from-label col-md-3 col-md-3 col-sm-3" for="CorreoL">Correo electrónico laboral</label>
+                                  <div class="col-md-6 col-sm-6">
+                                    <input type="email" class="form-control col" name="CorreoL">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                      <button type="submit" class="btn btn-danger botonlugar">Guardar Cambios</button>
+                                    </div>
+                                </div>
+                              </form>
+                          </div>
+                          <!--Términa ubicación-->
+
+                          <!--Datos fiscales-->
+                          <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+                            <form class="form-horizontal form-label-left">
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="RFCE">RFC <span class="required">*</span></label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" name="RFCE" id="RFCE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="RazonSE">Razón fiscal *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" name="RazonSE" id="RazonSE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="RCapitalE">Régimen capital *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <select class="form-control">
+                                            <option selected disabled>Selecciona una opción</option>
+                                            <option>Fisico</option>
+                                        </select>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="DomicilioCE">Domicilio calle *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" name="DomicilioCE" id="DomicilioCE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="DomicilioNE">Domicilio número exterior *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="number" class="form-control" name="DomicilioNE" id="DomicilioNE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="DomicilioNI">Domicilio número interior</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="number" class="form-control" name="DomicilioNI" id="DomicilioNI">
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="CPE">Código postal</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="number" class="form-control" name="CPE" id="CPE">
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-3 col-sm-3" for="DColoniaE">Colonia *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" name="DColoniaE" id="DColoniaE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="DLocalidadE">Localidad *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" name="DLocalidadE" id="DLocalidadE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="DMunicipioE">Municipio *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" name="DMunicipioE" id="DMunicipioE" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-from-label col-md-3 col-sm-3" for="DEstadoE">Estado *</label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <select class="form-control">
+                                            <option selected disabled>Selecciona una opción</option>
+                                            <option>Tamaulipas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                      <button type="submit" class="btn btn-danger botonlugar">Guardar Cambios</button>
+                                    </div>
+                                </div>
+                              </form>
+                          </div>
+                          <!--Términa datos fiscales-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- morris.js -->
+    <script src="../vendors/raphael/raphael.min.js"></script>
+    <script src="../vendors/morris.js/morris.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+  </body>
+</html>

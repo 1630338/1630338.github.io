@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Caja</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+        <!--Sweetalert-->
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <link href="../Paginas/css/estilo.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>PhoneRestore</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Carlos Carillo</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="Home.html"><i class="fa fa-home"></i> Principal</a></li>
+                  <li><a href="Caja.html"><i class="fa fa-briefcase"></i> Caja</a></li>
+                  <li><a><i class="fa fa-shopping-cart"></i> Ventas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="RealizarVenta.html">Realizar venta</a></li>
+                      <li><a href="Ventas.html">Ventas</a></li>
+                      <li><a href="Clientes.html">Clientes</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-suitcase"></i> Compras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="VistaIngreso.html">Ingresos</a></li>
+                      <li><a href="Proveedores.html">Proveedores</a></li>                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cubes"></i> Almacén <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Categorias.html">Categorías</a></li>
+                      <li><a href="Sub-Categoria.html">Sub-categorias</a></li>
+                      <li><a href="Producto.html">Productos</a></li>
+                      <li><a href="UnidadesM.html">Unidades de medida</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-wrench"></i> Taller <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Reparacion.html">Reparación</a></li>
+                      <li><a href="VerMantenimiento.html">Mantenimiento</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a>Reporte Ingresos</a></li>
+                      <li><a>Reporte Ventas</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i></i> Caja</a></li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Configuración</h3>
+                <ul class="nav side-menu">                  
+                  <li><a><i class="fa fa-gears"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">                      
+                      <li><a href="Tiendas.html">Tiendas</a></li>
+                      <li><a href="contacts.html">Empleados</a></li>
+                      <li><a href="Perfil-Tienda.html">Perfil</a></li>
+                      <li><a href="TipoDocumento.html">Tipo documento</a></li>
+                    </ul>
+                  </li>                  
+                  <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de...</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>-->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="">Carlos Carillo
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="javascript:;"> Perfil</a>
+                      <a class="dropdown-item"  href="javascript:;">                        
+                        <span>Configuración</span>
+                      </a>
+                  <a class="dropdown-item"  href="javascript:;">Help</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Salir</a>
+                  </div>
+                </li>
+
+                <li role="presentation" class="nav-item dropdown open">
+                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="text-center">
+                        <a class="dropdown-item">
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            
+            <!--Empieza modal para abrir caja-->
+            <div class="modal fade bs-example-modal-lg" id="ACaja" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">          
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Abrir Caja</h4>
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-horizontal form-label-left">
+                        <div class="form-group row">
+                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Tienda">Tienda: </label>
+                          <div class="col-md-6 col-sm-6">
+                            <select class="form-control" disabled>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option>Tienda 1</option>
+                                <option>Tienda 2</option>
+                            </select>
+                          </div>                                          
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="CFechayhora">Fecha y hora:</label>
+                          <div class="col-md-6 col-sm-6">
+                            <input type="datetime-local" class="form-control" id="CFechayhora" name="CFechayhora" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="CUsuario">Usuario:</label>
+                          <div class="col-md-6 col-sm-6">
+                            <input type="text" class="form-control" id="CUsuario" name="CUsuario" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-from-label col-md-3 col-sm-3 label-align" for="Monto"> Monto: $</label>
+                            <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control" id="Monto" name="Monto" disabled>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-from-label col-md-6 col-sm-6 mejoral">Monedas</label>
+                            <label class="col-from-label col-md-6 col-sm-6 mejoral">Billetes</label>
+                        </div>
+                        <div class="col-md-12 form-group row">
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">0.50</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">1</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">20</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">50</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-group row">
+                            <label class="col-form-label col-md-1 col-sm-1 label-align letraA">2</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">5</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">100</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-form-label col-md-1 col-sm-1 label-align letraA">200</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-group row">
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">10</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">20</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">500</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                            <label class="col-from-label col-md-1 col-sm-1 label-align letraA">1000</label>
+                            <div class="col-md-2 col-sm-2">
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary">Abrir caja</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!--Termina modal para abrir caja-->
+          <div class="row">              
+            <div class="col-md-12 col-sm-12 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Caja</h2>
+                  <button class="btn btn-primary botonlugar" type="button" data-toggle="modal" data-target="#ACaja"><i class="fa fa-key"></i> Abrir caja</button>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <div class="row">
+                    <div class="col-md-55">
+                      <div class="thumbnail">
+                        <div class="image view view-first">
+                          <img style="width: 100%; display: block;" src="images/caja.png" alt="image" />
+                          <div class="mask">
+                            <p>Caja - Lagos de Moreno</p>
+                            <div class="tools tools-bottom">
+                              <a class="btn btn-default" type="button" data-toggle="modal" data-target="#VCaja" title="Información"><i class="fa fa-eye" title="Información"></i></a>
+                              <a class="btn btn-default" type="button" id="button1" title="Corte de caja"><i class="fa fa-lock" title="Corte de caja"></i></a>
+                            </div>
+                            
+                            <!--Empieza modal para ver caja-->
+                            <div class="modal fade bs-example-modal-lg" id="VCaja" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">          
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel">Ver Caja</h4>
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal form-label-left">
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Tienda">Tienda: </label>
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <select class="form-control" disabled>
+                                                                <option selected disabled>Selecciona una opción</option>
+                                                                <option>Tienda 1</option>
+                                                                <option>Tienda 2</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="CFechayhora">Fecha y hora:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="datetime-local" class="form-control" id="CFechayhora" name="CFechayhora" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="CUsuario">Usuario:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="text" class="form-control" id="CUsuario" name="CUsuario" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="MontoI">Monto Inicial: $</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Monto" name="Monto" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Ventas">Ventas:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Ventas" name="Ventas" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="MontoT">Monto Total: $</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="MontoT" name="MontoT" disabled>
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Termina modal para ver caja-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-55">
+                      <div class="thumbnail">
+                        <div class="image view view-first">
+                          <img style="width: 100%; display: block;" src="images/caja.png" alt="image" />
+                          <div class="mask">
+                            <p>Your Text</p>
+                            <div class="tools tools-bottom">
+                              <a class="btn btn-default" type="button" data-toggle="modal" data-target="#CCaja" title="Información"><i class="fa fa-check-square"></i></a>
+                            </div>
+                            <!--Empieza modal para ver caja cerrada-->
+                            <div class="modal fade bs-example-modal-lg" id="CCaja" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">          
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel">Caja cerrada</h4>
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal form-label-left">
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Tienda">Tienda: </label>
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <select class="form-control" disabled>
+                                                                <option selected disabled>Selecciona una opción</option>
+                                                                <option>Tienda 1</option>
+                                                                <option>Tienda 2</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="CFechayhora">Fecha y hora:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="datetime-local" class="form-control" id="CFechayhora" name="CFechayhora" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="CUsuario">Usuario:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="text" class="form-control" id="CUsuario" name="CUsuario" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="MontoI">Monto Inicial: $</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Monto" name="Monto" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Ventas">Ventas:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Ventas" name="Ventas" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Efectivo">Efectivo:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Efectivo" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Tarjeta">Tarjeta:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Tarjeta" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-from-label col-md-3 col-sm-3 label-align" for="Cheques">Cheques:</label>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" id="Cheques" disabled>
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Termina modal para ver caja cerrada-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">            
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+      
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    
+    <!-- morris.js -->
+    <script src="../vendors/raphael/raphael.min.js"></script>
+    <script src="../vendors/morris.js/morris.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+  <!--Llamado sweetalrt-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.all.min.js"></script>
+  <script>
+    $("#button1").click(function(){
+      Swal.fire({
+        title: '¿Estás seguro de que deseas cerrar caja?',
+        text: "",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Si'
+        }).then((result) => {
+          if (result.value) {
+            Swal.fire(
+              '¡Cerrado!',
+              'La caja se ha cerrado.',
+              'success'
+            )
+          }
+        })
+    });
+  </script>
+</html>

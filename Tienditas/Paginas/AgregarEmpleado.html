@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Agregar Empleado</title>
+
+ <!-- Bootstrap -->
+ <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Font Awesome -->
+ <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <!-- NProgress -->
+ <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- Switchery -->
+<link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+ <!-- Custom Theme Style -->
+ <link href="../build/css/custom.min.css" rel="stylesheet">
+
+ <link href="../Paginas/css/estilo.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.css">
+<!-- Include plugin -->
+
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>PhoneRestore</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Carlos Carillo</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="Home.html"><i class="fa fa-home"></i> Principal</a></li>
+                  <li><a href="Caja.html"><i class="fa fa-briefcase"></i> Caja</a></li>
+                  <li><a><i class="fa fa-shopping-cart"></i> Ventas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="RealizarVenta.html">Realizar venta</a></li>
+                      <li><a href="Ventas.html">Ventas</a></li>
+                      <li><a href="Clientes.html">Clientes</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-suitcase"></i> Compras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="VistaIngreso.html">Ingresos</a></li>
+                      <li><a href="Proveedores.html">Proveedores</a></li>                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cubes"></i> Almacén <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Categorias.html">Categorías</a></li>
+                      <li><a href="Sub-Categoria.html">Sub-categorias</a></li>
+                      <li><a href="Producto.html">Productos</a></li>
+                      <li><a href="UnidadesM.html">Unidades de medida</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-wrench"></i> Taller <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Reparacion.html">Reparación</a></li>
+                      <li><a href="VerMantenimiento.html">Mantenimiento</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a>Reporte Ingresos</a></li>
+                      <li><a>Reporte Ventas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Configuración</h3>
+                <ul class="nav side-menu">                  
+                  <li><a><i class="fa fa-gears"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">                      
+                      <li><a href="Tiendas.html">Tiendas</a></li>
+                      <li><a href="contacts.html">Empleados</a></li>
+                      <li><a href="Perfil-Tienda.html">Perfil</a></li>
+                      <li><a href="TipoDocumento.html">Tipo documento</a></li>
+                    </ul>
+                  </li>                  
+                  <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de...</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>-->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="">Carlos Carillo
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="javascript:;"> Perfil</a>
+                      <a class="dropdown-item"  href="javascript:;">                        
+                        <span>Configuración</span>
+                      </a>
+                  <a class="dropdown-item"  href="javascript:;">Help</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Salir</a>
+                  </div>
+                </li>
+
+                <li role="presentation" class="nav-item dropdown open">
+                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="text-center">
+                        <a class="dropdown-item">
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <div class="">              
+              <div class="clearfix"></div>
+  
+              <div class="row">
+  
+                <div class="col-md-12 col-sm-12 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Agregar Empleado <small>Información</small></h2>                      
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+  
+  
+                      <!-- Smart Wizard -->                      
+                      <div id="wizard" class="form_wizard wizard_horizontal">
+                        <ul class="wizard_steps">
+                          <li>
+                            <a href="#step-1">
+                              <span class="step_no">1</span>
+                              <span class="step_descr">
+                                                Paso 1<br />
+                                                <small>Información Personal</small>
+                                            </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#step-2">
+                              <span class="step_no">2</span>
+                              <span class="step_descr">
+                                                Paso 2<br />
+                                                <small>Información Laboral</small>
+                                            </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#step-3">
+                              <span class="step_no">3</span>
+                              <span class="step_descr">
+                                                Paso 3<br />
+                                                <small>Información Emergencia</small>
+                                            </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#step-4">
+                              <span class="step_no">4</span>
+                              <span class="step_descr">
+                                                Paso 4<br />
+                                                <small>Información Bancaria</small>
+                                            </span>
+                            </a>
+                          </li>
+                          <li>
+                              <a href="#step-5">
+                                <span class="step_no">5</span>
+                                <span class="step_descr">
+                                    Paso 5<br>
+                                    <small>Información General</small>
+                                </span>
+                              </a>
+                          </li>
+                        </ul>
+
+                        <!--Inicia paso 1-->
+                        <div id="step-1">
+                          <form class="form-horizontal form-label-left">
+                            <div class="form-group row">
+                            <label class="col-form-label col-md-3 col-sm-3 label-align">Foto:
+                            </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="Nombre">Nombre *
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="first-name" required class="form-control" disabled>
+                              </div>
+                              <div class="col-md-1 col-sm-1">
+                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MNombre"><span class="glyphicon glyphicon-plus mas"></span></button>
+                              </div>
+                              <!--Empieza modal para nombre-->
+                              <div class="modal fade bs-example-modal-lg" id="MNombre" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">          
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Nombre</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Nombre">Nombre(s)*</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Nombre" name="Nombre">
+                                          </div>                                          
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="ApellidoP">Apellido Paterno*</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="ApellidoP" name="ApellidoP">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="ApellidoM">Apellido Materno</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="ApellidoM" name="ApellidoM">
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para nombre-->
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="Genero">Género<span class="required">*</span></label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <div id="gender" class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-secondary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-secondary">
+                                      <input type="radio" name="gender" value="male" class="join-btn"> Masculino
+                                    </label>
+                                    <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-secondary">
+                                      <input type="radio" name="gender" value="female" class="join-btn"> Femenino
+                                    </label>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="FechaN">Fecha de nacimiento
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <input id="birthday" class="date-picker form-control" required="required" type="date">
+                                </div>
+                              </div>
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="Direccion">Dirección
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="last-name" name="last-name" class="form-control" disabled>
+                              </div>
+                              <div class="col-md-1 col-sm-1">
+                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MDireccion"><span class="glyphicon glyphicon-plus mas"></span></button>
+                              </div>
+                              <!--Empieza modal para Direccion-->
+                              <div class="modal fade bs-example-modal-lg" id="MDireccion" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">          
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Dirección</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Calle">Calle</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Calle" name="Calle">
+                                          </div>                                          
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NExterior">N°Exterior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="NExterior" name="NExterior">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NInterior">N°Interior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="NInterior" name="NInterior">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Colonia">Colonia</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Colonia" name="Colonia">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Poblacion">Población</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Poblacion" name="Poblacion">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Municipio">Municipio</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Municipio" name="Municipio">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Estado">Estado</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Estado" name="Estado">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-form-label col-md-3 col-sm-3 label-align" for="Pais">Pais</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Pais" name="Pais">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="CP">Código Postal</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="CP" name="CP">
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para direccion-->
+                            </div>
+
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="CorreoE">Correo electrónico
+                            </label>
+                            <div class="col-md-6 col-sm-6 ">
+                                <input type="email" class="form-control col" name="middle-name" >
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="TelefonoCa">Teléfono casa
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="number" class="form-control col" name="TelefonoC">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="TelefonoCe">Teléfono celular
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="number" class="form-control col" name="TelefonoCe">
+                                </div>
+                            </div>                            
+                          </form>
+                        </div>
+                        <!--Termina paso 1-->
+
+                        <!--Inicia paso 2-->
+                        <div id="step-2">                          
+                          <form class="form-horizontal form-label-left">                            
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="TiendaA">Tienda asignada *
+                              </label>
+                              <div class="col-md-6 col-sm-6">
+                                <select class="form-control">
+                                    <option selected disabled>Selecciona una opción</option>
+													          <option>PhoneRestore</option>
+                                </select>
+                              </div>
+                              <div class="col-md-1 col-sm-1">
+                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MTienda" title="Agregar otra opción"><span class="glyphicon glyphicon-plus mas"></span></button>
+                              </div>
+                               <!--Empieza modal para tienda-->
+                               <div class="modal fade bs-example-modal-lg" id="MTienda" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">      
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Tienda</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NComercial">Nombre comercial</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="NComercial" name="NComercial" disabled>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="TSucursal">Tienda de tipo</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="TMatriz" name="TScursal" value="Scursal" disabled>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NTienda">Nombre tienda</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="NTienda" name="NTienda" placeholder="Ej.Centro">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-form-label col-md-3 col-sm-3 label-align" for="Direccion">Dirección</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Direccion" name="Direccion">
+                                          </div>
+                                          <div class="col-md-1 col-sm-1">
+                                            <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MDireccionT"><span class="glyphicon glyphicon-plus mas"></span></button>
+                                          </div>                                          
+                                      </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Telefono1">Teléfono 1</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="Telefono1" name="Telefono1">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Telefono2">Teléfono 2</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="Telefono2" name="Telefono2">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="CorreoE">Correo electrónico</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="email" class="form-control" id="CorreoE" name="CorreoE">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Ubicacion">Ubicación</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.310175370982!2d-99.14476478469236!3d23.736316095230347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867953a97e975c5f%3A0x30774088b1374d38!2sCalle%20Jos%C3%A9%20Mariano%20Abasolo%201185-1065%2C%20Zona%20Centro%2C%2087000%20Cd%20Victoria%2C%20Tamps.!5e0!3m2!1ses!2smx!4v1601063580190!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>      
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para tienda-->
+                              <!--Empieza modal para Direccion-->
+                              <div class="modal fade bs-example-modal-lg" id="MDireccionT" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">          
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Dirección</h4>
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                                    </div>
+                                  <div class="modal-body">
+                                    <form class="form-horizontal form-label-left">
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="Calle">Calle</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Calle" name="Calle">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="NExterior">N°Exterior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="NExterior" name="NExterior">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="NInterior">N°Interior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="NInterior" name="NInterior">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="Colonia">Colonia</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Colonia" name="Colonia">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="Poblacion">Población</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="Poblacion" name="Poblacion">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="Municipio">Municipio</label>
+                                        <div class="col-md-6 col-sm-6">
+                                          <input type="text" class="form-control" id="Municipio" name="Municipio">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="Estado">Estado</label>
+                                        <div class="col-md-6 col-sm-6">
+                                          <input type="text" class="form-control" id="Estado" name="Estado">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-form-label col-md-3 col-sm-3 label-align" for="Pais">Pais</label>
+                                        <div class="col-md-6 col-sm-6">
+                                          <input type="text" class="form-control" id="Pais" name="Pais">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label class="col-from-label col-md-3 col-sm-3 label-align" for="CP">Código Postal</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="number" class="form-control" id="CP" name="CP">
+                                          </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                  </div>            
+                                </div>
+                                </div>
+                              </div>
+                            <!--Termina modal para direccion-->
+                            </div> 
+
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="Departamento">Departamento *</label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <select class="form-control">
+                                    <option selected disabled>Selecciona una opción</option>
+                                    <option>Trabajador</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-1 col-sm-1">
+                                  <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MDepartamento" title="Agregar otra opción"><span class="glyphicon glyphicon-plus mas"></span></button>
+                                </div>
+                                <!--Empieza modal para Departamento-->
+                               <div class="modal fade bs-example-modal-lg" id="MDepartamento" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Departamento</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="DepartamentoS">Departamento superior</label>
+                                          <div class="col-md-6 col-sm-6">
+                                          <select class="form-control">
+                                            <option selected disabled>Selecciona una opción</option>
+                                            <option>Contabilidad</option>
+                                          </select>
+                                          </div>                                          
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="NombreD">Nombre departamento</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="NombreD" name="NombreD">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="ResponsableD">Responsable de departamento</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <select class="form-control">
+                                              <option selected disabled>Selecciona una opción</option>
+                                              <option>Juan Nieves</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>        
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para Departamento-->
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="Puesto">Puesto *
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <select class="form-control">
+                                    <option selected disabled>Selecciona una opción</option>
+                                    <option>Jefe</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-1 col-sm-1">
+                                  <button class="btn btn-default" type="button" data-toggle="modal" data-target="#MPuesto" title="Agregar otra opción"><span class="glyphicon glyphicon-plus mas"></span></button>
+                                </div>
+                              <!--Empieza modal para Puesto-->
+                               <div class="modal fade bs-example-modal-lg" id="MPuesto" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Puesto</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">                                        
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="PuestoR">Puesto:</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <input type="text" class="form-control" id="PuestoR" name="PuestoR">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Departamento">Departamento</label>
+                                          <div class="col-md-6 col-sm-6">
+                                            <select class="form-control">
+                                              <option selected disabled>Selecciona una opción</option>
+                                              <option>Jefe</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>        
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para Puesto-->
+                            </div>
+                            
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="Responsable">Responsable *</label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <select class="form-control">
+                                  <option selected>Selecciona una opción</option>
+                                  <option>Raul Jamón</option>
+                                </select>
+                              </div>                                                         
+                            </div>
+                            
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="Modulos">Modulos *</label>
+                              <div class="col-md-6 col-sm-6">
+                                <div class="multiselect">
+                                  <div class="selectBox" onclick="showCheckboxes()">
+                                      <select class="form-control custom-select">
+                                          <option>Selecciona una opción</option>
+                                      </select>
+                                      <div class="overSelect"></div>
+                                  </div>
+                                  <div id="checkboxes" class="hide">
+                                      <label class="letras" for="c1"><input type="checkbox" id="c1"> Tennis</label>
+                                      <label class="letras" for="c2"><input type="checkbox" id="c2" /> Zapatos</label>
+                                      <label class="letras" for="c3"><input type="checkbox" id="c3" /> Relojes</label>
+                                      <label class="letras" for="c4"><input type="checkbox" id="c4" /> Deportivos</label>
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="HorarioL">Horario Laboral
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <textarea rows="3" class="form-control" disabled></textarea>
+                              </div>
+                              <div class="col-md-1 col-sm-1">
+                                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#HLaboral" title="Agregar otra opción"><span class="glyphicon glyphicon-plus mas"></span></button>
+                              </div>
+                              <!--Empieza modal para Puesto-->
+                              <div class="modal fade bs-example-modal-lg" id="HLaboral" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title" id="myModalLabel">Horario Laboral</h4>
+                                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form class="form-horizontal form-label-left">  
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align"><h5>Horario</h5></label>
+                                          <label class="col-from-label col-md-3 col-sm-3"><h5>Entrada</h5></label>
+                                          <label class="col-from-label col-md-3 col-sm-3"><h5>Salida</h5></label>
+                                        </div>                                      
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="PuestoR">Lunes</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaL" name="EntradaL">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaL" name="SalidaL">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align" for="Departamento">Martes</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaMa" name="EntradaMa">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaM" name="SalidaMa">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align">Miércoles</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaMi" name="EntradaMi">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaMi" name="SalidaMi">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align">Jueves</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaJ" name="EntradaJ">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaJ" name="SalidaJ">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align">Viernes</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaV" name="EntradaV">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaV" name="SalidaV">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align">Sabado</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaS" name="EntradaS">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaS" name="SalidaS">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align">Domingo</label>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="EntradaD" name="EntradaD">
+                                          </div>
+                                          <div class="col-md-3 col-sm-3">
+                                            <input type="time" class="form-control" id="SalidaD" name="SalidaD">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label class="col-from-label col-md-3 col-sm-3 label-align">Tiempo de comida</label>
+                                          <div class="col-md-5 col-sm-5">
+                                            <input type="number" class="form-control" id="TComida" name="TComida">
+                                          </div>
+                                          <label class="col-from-label col-md-1 col-sm-1">mins</label>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>        
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Termina modal para Puesto-->
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="TelefonoOf">Teléfono oficina/conmutador
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="number" class="form-control col" name="TelefonoOf">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label class="col-from-label col-md-3 col-sm-3 label-align" for="TelefonoCe">Extensión
+                                </label>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="number" class="form-control col" name="Extensión">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="TelefonoCL">Teléfono celular laboral
+                              </label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control col" name="TelefonoCL">
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="NUsuario">Nombre de usuario</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="text" class="form-control col" name="NUsuario">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="CUsuario">Contraseña del usuario</label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="password" class="form-control col" name="CUsuario">
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                        <!--Termina paso 2-->
+                        
+                        <!--Inicia paso 3-->
+                        <div id="step-3">
+                          <form class="form-horizontal form-label-left">                            
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="Contacto">Contacto
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="Contacto"  class="form-control">
+                              </div>                              
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="Teléfono">Teléfono</label>
+                                <div class="col-md-6 col-sm-6">
+                                  <input type="number" id="Teléfono"  class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="TipoS">Tipo de sangre
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                  <select class="form-control">
+                                    <option selected disabled>Selecciona una opción</option>
+													          <option>O+</option>
+													          <option>O-</option>
+													          <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                  </select>
+                                </div>                                
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="Alergias">Alergias</label>
+                              <div class="col-md-6 col-sm-6">
+                                <select id="my-select" multiple="multiple" class="form-control">
+                                  <option value="1">Cacahuates</option>
+                                  <option value="2">Limón</option>
+                                  <option value="3">Polvo</option>
+                                  <option value="4">Abejas</option>
+                                  <option value="5">Naproxeno</option>                                  
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="PadeciminetosC">Padeciminetos crónicos
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="PedcimientosC" name="PadecimientosC" class="form-control">
+                              </div>                              
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="Medicacion">Medicación
+                              </label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="text" id="Medicacion" name="Medicacion" class="form-control">
+                              </div>
+                            </div>
+                          <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="InstitucionS">Institución de salud</label>                            
+                            <div class="col-md-6 col-sm-6">
+                              <select class="form-control">
+                                    <option selected disabled>Selecciona una opción</option>
+													          <option>IMSS</option>
+                              </select>
+                            </div>
+                            <div class="col-md-1 col-sm-1">
+                              <button class="btn btn-default" type="button" data-toggle="modal" data-target="#Institucion"><span class="glyphicon glyphicon-plus mas"></span></button>
+                            </div>                            
+                          </div>
+                           <!--Empieza modal para Institución-->
+                           <div class="modal fade bs-example-modal-lg" id="Institucion" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel">Institución</h4>
+                                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form class="form-horizontal form-label-left">                                        
+                                    <div class="form-group row">
+                                      <label class="col-from-label col-md-3 col-sm-3 label-align" for="NInstitucion">Nombre de institución:</label>
+                                      <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" id="NInstitucion" name="NInstitucion">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label class="col-from-label col-md-3 col-sm-3 label-align" for="DInstitucion">Dirección:</label>
+                                      <div class="col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" id="DInstitucion" name="DInstitucion">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label class="col-from-label col-md-3 col-sm-3 label-align" for="TInstitucion">Teléfono:</label>
+                                      <div class="col-md-6 col-sm-6">
+                                        <input type="number" class="form-control" id="TInstitucion" name="TInstitucion">
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary">Guardar</button>
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+                          <!--Termina modal para Institución-->
+                          <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="NSS">NSS</label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="number" id="NSS" name="NSS" class="form-control">
+                            </div>
+                          </div>
+                          </form>
+                        </div>
+                        <!--Termina paso 3-->
+
+                        <!--Incia paso 4-->
+                        <div id="step-4">
+                          <form class="form-horizontal form-label-left">                            
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="EntradaB">Entidad Bancaria
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <select class="form-control">
+                                  <option selected disabled>Selecciona una opción</option>
+                                  <option>Banamex</option>
+                                </select>
+                              </div>                                                 
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="Cuenta">Cuenta</label>
+                                <div class="col-md-6 col-sm-6">
+                                  <input type="number" id="Cuenta" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="NumeroS">Número de Sucursal
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <input type="text" id="NumeroS" name="NumeroS" class="form-control">
+                              </div>                              
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="CLABE">CLABE
+                              </label>
+                              <div class="col-md-6 col-sm-6">
+                                <input type="text" id="CLABE" name="CLABE" class="form-control">
+                              </div>
+                            </div>
+                          <div class="form-group row">
+                              <label class="col-from-label col-md-3 col-sm-3 label-align" for="RFCE">RFC Empleado</label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="text" id="RFCE" name="RFCE" class="form-control">
+                            </div>
+                          </div>                          
+                          </form>
+                        </div>
+                        <!--Termina paso 4-->
+                        <!--Inicia paso 5-->
+                        <div id="step-5">
+                          <form class="form-horizontal form-label-left">                            
+                            <div class="form-group row">
+                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="Notas">Notas
+                              </label>
+                              <div class="col-md-6 col-sm-6 ">
+                                <textarea rows="3" name="Notas" class="form-control"></textarea>
+                              </div>                                                 
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="Habi/Desa">Habilitar/Deshabilitar</label>
+                                <div class="col-md-6 col-sm-6">
+                                  <input type="checkbox" name="Habi/Desa" class="js-switch" checked /> Habilitar/Deshabilitar
+                                </div>
+                            </div>                                                    
+                          </form>
+                        </div>
+                        <!--Terminsa paso 5-->
+                      </div>
+                      <!-- End SmartWizard Content -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">            
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+     <!-- jQuery -->
+     <script src="../vendors/jquery/dist/jquery.min.js"></script>
+     <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- FastClick -->
+     <script src="../vendors/fastclick/lib/fastclick.js"></script>
+     <!-- NProgress -->
+     <script src="../vendors/nprogress/nprogress.js"></script>
+     <!-- Switchery -->
+	  <script src="../vendors/switchery/dist/switchery.min.js"></script>
+     <!-- jQuery Smart Wizard -->
+     <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+     <!-- Custom Theme Scripts -->
+     <script src="../build/js/custom.min.js"></script>
+
+     <script src="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.js"></script>
+
+     <script>
+      // Initialize multiple select on your regular select
+      $("#my-select").multipleSelect({
+          filter: true
+      });
+    </script>
+
+    <!--Modulos a ver-->
+    <script>
+      function showCheckboxes() {
+        var checkboxes = document.getElementById("checkboxes");
+        if(checkboxes.classList.contains("hide")) {
+            checkboxes.classList.remove("hide");
+        } else {
+            checkboxes.classList.add("hide");
+        }
+      }
+    </script>
+  </body>
+</html>

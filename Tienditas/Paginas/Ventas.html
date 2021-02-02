@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ventas</title>
+
+    <!-- Bootstrap -->
+    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!--Sweetalert-->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <!--Select busqueda-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+    
+    <!--Estilo propio-->
+    <link href="../Paginas/css/estilo.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+           <!-- menu profile quick info -->
+           <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/Carlos Zinhai Carrillo Zermeño.png" alt="..." class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+              <span>Bienvenido,</span>
+              <h2>Carlos Carillo</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="Home.html"><i class="fa fa-home"></i> Principal</a></li>
+                  <li><a href="Caja.html"><i class="fa fa-briefcase"></i> Caja</a></li>
+                  <li><a><i class="fa fa-shopping-cart"></i> Ventas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="RealizarVenta.html">Realizar venta</a></li>
+                      <li><a href="Ventas.html">Ventas</a></li>
+                      <li><a href="Clientes.html">Clientes</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-suitcase"></i> Compras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="VistaIngreso.html">Ingresos</a></li>
+                      <li><a href="Proveedores.html">Proveedores</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cubes"></i> Almacén <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Categorias.html">Categorías</a></li>
+                      <li><a href="Sub-Categoria.html">Sub-categorias</a></li>
+                      <li><a href="Producto.html">Productos</a></li>
+                      <li><a href="UnidadesM.html">Unidades de medida</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-wrench"></i> Taller <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Reparacion.html">Reparación</a></li>
+                      <li><a href="VerMantenimiento.html">Mantenimiento</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a>Reporte Ingresos</a></li>
+                      <li><a>Reporte Ventas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Configuración</h3>
+                <ul class="nav side-menu">                  
+                  <li><a><i class="fa fa-gears"></i> Configuración <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">                      
+                      <li><a href="Tiendas.html">Tiendas</a></li>
+                      <li><a href="contacts.html">Empleados</a></li>
+                      <li><a href="Perfil-Tienda.html">Perfil</a></li>
+                      <li><a href="TipoDocumento.html">Tipo documento</a></li>
+                    </ul>
+                  </li>                  
+                  <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de...</a></li>
+                </ul>
+              </div>
+
+            </div>
+          <!-- /sidebar menu -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/img.jpg" alt="">John Doe
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+  
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Ventas</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                    </ul>  
+                        <a type="button" class="btn btn-primary botonlugar" href="../Paginas/RealizarVenta.html"><span class="glyphicon glyphicon-plus mas"></span>Agregar Venta</a>
+                      
+                    <div class="clearfix"></div>
+                </div>
+                  <label>Desargar reporte en:</label>
+                  <div class="x_content">
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <div class="card-box table-responsive">
+                                <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Fecha</th>
+                                            <th>Empleado</th>
+                                            <th>Documento</th>
+                                            <th>Número</th>
+                                            <th>Total</th>
+                                            <th>Estado</th>
+                                            <th>Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>22/10/2020</td>
+                                            <td>Carlos Carillo</td>
+                                            <td>Ticket</td>
+                                            <td>522</td>
+                                            <td>$1452</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#MVentaVer" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar" id="button1"><i class="fa fa-close"></i></button>
+                                            </td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <td>4534578</td>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>3%</td>
+                                            <td>Tokyo</td>
+                                            <td>asdas</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-close"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>731642</td>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>3%</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>468257</td>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>3%</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>642879</td>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>3%</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>137648</td>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>3%</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>913746</td>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>3%</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>163472</td>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>3%</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>751535</td>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>3%</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>568912</td>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>3%</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>125678</td>
+                                            <td>Jena Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>3%</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>794613</td>
+                                            <td>Quinn Flynn</td>
+                                            <td>Support Lead</td>
+                                            <td>3%</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <td>167349</td>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>3%</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>Habilitado</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-secondary btn-sm" title="Activar/Desactivar"><i class="fa fa-unlock-alt"></i></button>
+                                            </td>
+                                        </tr>              
+                                    </tbody>
+                                </table>
+                                <!--Empieza modal para ver venta-->
+                                <div class="modal fade bs-example-modal-lg" id="MVentaVer" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">          
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Ver Venta</h4>
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-horizontal form-label-left">
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Sucursal</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <select class="form-control" disabled>
+                                                          <option selected disabled>Selecciona una scursal</option>
+                                                          <option>HP</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                          
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Proveedor</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <select class="form-control" disabled>
+                                                          <option selected disabled>Selecciona un proveedor</option>
+                                                          <option>Jóse</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                          
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Fecha</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <input type="datetime" class="form-control" disabled>
+                                                      </div>
+                                                    </div>
+                          
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Tipo comprobante</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <select class="form-control" disabled>
+                                                          <option selected disabled>Selecciona un comprobante</option>
+                                                          <option>Ticket</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                          
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Serie/Folio</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" disabled>
+                                                      </div>
+                                                    </div>
+                          
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Número</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" disabled>
+                                                      </div>
+                                                    </div>
+                          
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-3 col-sm-3 label-align">Impuesto %</label>
+                                                      <div class="col-md-6 col-sm-6">
+                                                        <input type="number" class="form-control" disabled>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        
+                                                            <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                    <th>#</th>
+                                                                    <th>Articulo</th>
+                                                                    <th>SKU</th>
+                                                                    <th>Unidad</th>
+                                                                    <th>Cantidad</th>
+                                                                    <th>Descuento</th>
+                                                                    <th>Precio unitario</th>
+                                                                    <th>Importe</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th>1</th>
+                                                            <td>Tennis</td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control"  disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control"  disabled></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>2</th>
+                                                            <td>Jacob</td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control"  disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control"  disabled></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th>3</th>
+                                                            <td>Larry</td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control" disabled></td>
+                                                            <td><input type="number" class="form-control"  disabled></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    
+                                                    </div>
+                                                    <div class="form-group row">
+                                                      <label class="col-from-label col-md-2 col-sm-2 label-align">SubTotal</label>
+                                                      <div class="col-md-2 col-sm-2">
+                                                        <input type="number" class="form-control" disabled>
+                                                      </div>
+                          
+                                                      <label class="col-from-label col-md-2 col-sm-2 label-align">Iva %</label>
+                                                      <div class="col-md-2 col-sm-2">
+                                                        <input type="number" class="form-control" disabled>
+                                                      </div>
+
+                                                      <label class="col-from-label col-md-2 col-sm-2 label-align">Total</label>
+                                                      <div class="col-md-2 col-sm-2">
+                                                        <input type="number" class="form-control" disabled>
+                                                      </div>
+                                                    </div>
+                                                  </form>
+
+
+                                                <!--Termina-->
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Termina modal para producto-->
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <!--Llamado sweetalrt-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.all.min.js"></script>
+    <script>
+      $("#button1").click(function(){
+        Swal.fire({
+          title: '¿Estás seguro de que deseas eliminar la venta?',
+          text: "",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          cancelButtonText: 'Cancelar',
+          confirmButtonText: 'Eliminar'
+          }).then((result) => {
+            if (result.value) {
+              Swal.fire(
+                '¡Eliminado!',
+                'Tu vetna ha sido eliminada.',
+                'success'
+              )
+            }
+          })
+      });
+    </script>
+
+<script>
+    $(document).ready(function() {
+        $(".js-example-matcher-start").select2({
+        matcher: matchStart
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+  </body>
+</html>

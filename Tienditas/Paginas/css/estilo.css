@@ -1,0 +1,79 @@
+.mas{
+    color: #B8860B
+}
+
+.Pboton{
+    display: contents;
+}
+
+.botonlugar{
+    float: right;
+}
+
+.letraA{
+    font-weight: bold;
+}
+
+.escrito{
+    text-align: center;
+}
+
+.mejoral{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Estilo de checkbox con select de modulo */
+.multiselect {        
+    position:relative;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    width: 100%;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #checkboxes {
+    display: block;
+    border: 1px #dadada solid;
+    /*position:absolute;*/
+    width:100%;
+    background-color:white;
+    box-sizing: border-box;
+    overflow-y:auto;
+    max-height:110px;
+  }
+  #checkboxes.hide {display:none;}
+  
+  #checkboxes label {
+    display: block;
+  }    
+  
+  label.letras:hover, label.letras:active{
+  color: grey;
+  }
+
+  /*Termina checkbox con select de modulo */
+.porcent{
+    margin-top: 8px;
+    height: 0px;
+    color: #bbb;
+    line-height: 24px;
+    font-size: 15px;
+    top: 5px;
+    width: 17px;
+    text-align: center;
+  }
+  
